@@ -22,7 +22,9 @@ class HomeScreen extends StatelessWidget {
                 left: Dimensions.width12,
                 right: Dimensions.width12,
               ),
-              child: const CircleAvatar(backgroundColor: Colors.white12),
+              child: const CircleAvatar(
+                backgroundColor: Colors.white12,
+              ),
             ),
           ),
           Container(

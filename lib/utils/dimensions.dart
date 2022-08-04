@@ -9,6 +9,7 @@ class Dimensions {
       MediaQuery.of(NavigationService.navigatorKey.currentContext!).size.width;
 
 //height
+  static double height01 = screenHeight / 8120;
   static double height1 = screenHeight / 812;
   static double height5 = screenHeight / 162.4;
   static double height12 = screenHeight / 67.66;

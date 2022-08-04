@@ -11,7 +11,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: Dimensions.height1,
+        toolbarHeight: Dimensions.height01,
         backgroundColor: Colors.white,
       ),
       backgroundColor: Colors.black,
@@ -27,7 +27,10 @@ class LoginScreen extends StatelessWidget {
                     color: AudeckColors.blackAppColor,
                   ),
                   child: Container(
-                    padding: EdgeInsets.only(bottom: Dimensions.height330),
+                    padding: EdgeInsets.only(
+                        bottom: Dimensions.height330,
+                        left: Dimensions.width12,
+                        right: Dimensions.width12),
                     child: CircleAvatar(
                       backgroundColor: Colors.white12,
                       radius: Dimensions.height350,
@@ -125,8 +128,9 @@ class LoginScreen extends StatelessWidget {
                           child: Text(
                             'Sign Up',
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: Dimensions.height16),
+                              color: Colors.black,
+                              fontSize: Dimensions.height12,
+                            ),
                           ),
                         ),
                       ),

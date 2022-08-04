@@ -12,7 +12,7 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: Dimensions.height1,
+        toolbarHeight: Dimensions.height01,
         backgroundColor: Colors.white,
       ),
       backgroundColor: Colors.black,
@@ -28,10 +28,12 @@ class WelcomeScreen extends StatelessWidget {
                   color: AudeckColors.blackAppColor,
                 ),
                 child: Container(
-                  padding: EdgeInsets.only(bottom: Dimensions.height330),
-                  child: CircleAvatar(
+                  padding: EdgeInsets.only(
+                      bottom: Dimensions.height330,
+                      left: Dimensions.width12,
+                      right: Dimensions.width12),
+                  child: const CircleAvatar(
                     backgroundColor: Colors.white12,
-                    radius: Dimensions.height350,
                   ),
                 ),
               ),
