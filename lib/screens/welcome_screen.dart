@@ -1,3 +1,4 @@
+import 'package:audeck/screens/login_screen.dart';
 import 'package:audeck/widgets/buttons/primary_button.dart';
 import 'package:audeck/widgets/buttons/secondary_button.dart';
 import 'package:flutter/material.dart';
@@ -67,8 +68,11 @@ class WelcomeScreen extends StatelessWidget {
               Positioned(
                 bottom: Dimensions.height100,
                 child: PrimaryButton(
+                  textColor: AudeckColors.blackAppColor,
                   buttonTitle: 'LOGIN',
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(LoginScreen.routeName);
+                  },
                   buttonWidth: Dimensions.width335,
                   buttonHeight: Dimensions.height52,
                 ),

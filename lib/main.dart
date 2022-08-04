@@ -1,4 +1,5 @@
 import 'package:audeck/screens/home_screen.dart';
+import 'package:audeck/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/welcome_screen.dart';
@@ -14,6 +15,9 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: const WelcomeScreen(),
       navigatorKey: NavigationService.navigatorKey,
+      routes: {
+        LoginScreen.routeName: (context) => const LoginScreen(),
+      },
     ),
   );
 }

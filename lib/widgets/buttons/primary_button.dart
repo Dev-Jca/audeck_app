@@ -8,11 +8,13 @@ class PrimaryButton extends StatelessWidget {
   final Function() onPressed;
   final double? buttonWidth;
   final double? buttonHeight;
+  final Color? textColor;
   const PrimaryButton(
       {required this.buttonTitle,
       required this.onPressed,
       this.buttonHeight,
       this.buttonWidth,
+      this.textColor,
       Key? key})
       : super(key: key);
 
@@ -29,7 +31,7 @@ class PrimaryButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           buttonTitle,
-          style: const TextStyle(color: AudeckColors.blackAppColor),
+          style: TextStyle(color: textColor),
         ),
       ),
     );
